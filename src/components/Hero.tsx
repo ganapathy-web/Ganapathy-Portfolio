@@ -22,7 +22,7 @@ const Hero = () => {
               </h1>
             </div>
             <div className="animate-slide-up">
-              <div className="w-40 h-40 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+              <div className="w-64 h-80 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
                 <img
                   src="/photo.png"
                   alt="R. Ganapathy"
