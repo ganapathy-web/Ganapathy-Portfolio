@@ -14,29 +14,35 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 pt-16"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center animate-fade-in">
-          <div className="mb-8 inline-block">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 animate-pulse-slow">
-              <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
-                <span className="text-4xl font-bold text-blue-600 dark:text-blue-400">RG</span>
+        <div className="animate-fade-in">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
+            <div>
+              <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4 animate-slide-up">
+                R. Ganapathy
+              </h1>
+            </div>
+            <div className="animate-slide-up">
+              <div className="w-40 h-40 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
+                <img
+                  src="/photo.png"
+                  alt="R. Ganapathy"
+                  className="w-full h-full rounded-xl object-cover"
+                />
               </div>
             </div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-4 animate-slide-up">
-            R. Ganapathy
-          </h1>
+          <div className="text-center">
+            <p className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 mb-6 font-semibold animate-slide-up animation-delay-200">
+              Web Developer & UI/UX Enthusiast
+            </p>
 
-          <p className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 mb-6 font-semibold animate-slide-up animation-delay-200">
-            Web Developer & UI/UX Enthusiast
-          </p>
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-400">
+              Passionate about creating beautiful, user-friendly web applications with modern
+              technologies. Committed to delivering high-quality, scalable solutions.
+            </p>
 
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-400">
-            Passionate about creating beautiful, user-friendly web applications with modern
-            technologies. Committed to delivering high-quality, scalable solutions.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-slide-up animation-delay-600">
+            <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-slide-up animation-delay-600">
             <button
               onClick={handleScrollToContact}
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
@@ -85,8 +91,9 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="mt-16 animate-bounce">
-            <ArrowDown className="w-8 h-8 mx-auto text-gray-400 dark:text-gray-600" />
+            <div className="mt-16 animate-bounce">
+              <ArrowDown className="w-8 h-8 mx-auto text-gray-400 dark:text-gray-600" />
+            </div>
           </div>
         </div>
       </div>
