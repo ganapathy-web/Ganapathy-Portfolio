@@ -1,4 +1,4 @@
-import { User, MapPin, Mail, Phone, Eye, MessageSquare, Target } from 'lucide-react';
+import { User, MapPin, Mail, Phone, Target } from 'lucide-react';
 
 const About = () => {
   return (
@@ -55,45 +55,6 @@ const About = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                <Eye className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Observation</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Soft Skill</p>
-              </div>
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                <Target className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Decision Making</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Soft Skill</p>
-              </div>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                <MessageSquare className="w-8 h-8 text-green-600 mx-auto mb-2" />
-                <h4 className="font-semibold text-gray-900 dark:text-white mb-1">Communication</h4>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Soft Skill</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                Languages
-              </h3>
-              <div className="flex gap-4">
-                <div className="flex-1">
-                  <p className="text-gray-700 dark:text-gray-300 font-medium mb-1">Tamil</p>
-                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                    <div className="bg-blue-600 h-2 rounded-full" style={{ width: '100%' }}></div>
-                  </div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Native</p>
-                </div>
-                <div className="flex-1">
-                  <p className="text-gray-700 dark:text-gray-300 font-medium mb-1">English</p>
-                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
-                    <div className="bg-green-600 h-2 rounded-full" style={{ width: '75%' }}></div>
-                  </div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Intermediate</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

@@ -1,13 +1,13 @@
-import { Code, Palette, Database, Layout, FileSpreadsheet, Presentation } from 'lucide-react';
+import { Code, Palette, Database, LayoutGrid as Layout, FileSpreadsheet, Presentation } from 'lucide-react';
 
 const Skills = () => {
   const technicalSkills = [
-    { name: 'HTML', level: 90, icon: Code, color: 'from-orange-500 to-red-500' },
-    { name: 'Java', level: 85, icon: Code, color: 'from-red-500 to-orange-600' },
-    { name: 'Python', level: 80, icon: Code, color: 'from-blue-500 to-green-500' },
-    { name: 'Microsoft Excel', level: 75, icon: FileSpreadsheet, color: 'from-green-500 to-green-600' },
-    { name: 'PowerPoint', level: 85, icon: Presentation, color: 'from-orange-500 to-red-600' },
-    { name: 'Logo Design', level: 70, icon: Palette, color: 'from-purple-500 to-pink-500' },
+    { name: 'HTML', icon: Code, color: 'from-orange-500 to-red-500' },
+    { name: 'Java', icon: Code, color: 'from-red-500 to-orange-600' },
+    { name: 'Python', icon: Code, color: 'from-blue-500 to-green-500' },
+    { name: 'Microsoft Excel', icon: FileSpreadsheet, color: 'from-green-500 to-green-600' },
+    { name: 'PowerPoint', icon: Presentation, color: 'from-orange-500 to-red-600' },
+    { name: 'Logo Design', icon: Palette, color: 'from-purple-500 to-pink-500' },
   ];
 
   const interests = [
@@ -57,22 +57,11 @@ const Skills = () => {
                 key={index}
                 className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4">
                   <div className={`p-3 rounded-lg bg-gradient-to-br ${skill.color}`}>
                     <skill.icon className="w-6 h-6 text-white" />
                   </div>
-                  <div className="flex-1">
-                    <h4 className="font-bold text-gray-900 dark:text-white">{skill.name}</h4>
-                  </div>
-                  <span className="text-lg font-bold text-blue-600 dark:text-blue-400">
-                    {skill.level}%
-                  </span>
-                </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-3 overflow-hidden">
-                  <div
-                    className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
+                  <h4 className="font-bold text-gray-900 dark:text-white">{skill.name}</h4>
                 </div>
               </div>
             ))}
