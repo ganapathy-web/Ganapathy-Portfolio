@@ -26,9 +26,28 @@ const Hero = () => {
               <p className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold animate-slide-up animation-delay-200">
                 UI/UX Enthusiast
               </p>
-              <p className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold animate-slide-up animation-delay-200">
-                Tech Innovator
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mt-6 max-w-2xl mx-auto animate-slide-up animation-delay-300">
+                Passionate about creating beautiful, user-friendly web applications with modern
+                technologies. Committed to delivering high-quality, scalable solutions.
               </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-8 animate-slide-up animation-delay-400">
+                <button
+                  onClick={handleScrollToContact}
+                  className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                >
+                  Get In Touch
+                </button>
+                <a
+                  href="#projects"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="px-8 py-3 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-semibold rounded-lg shadow-lg hover:shadow-xl border-2 border-blue-600 dark:border-blue-400 transform hover:scale-105 transition-all duration-300"
+                >
+                  View Projects
+                </a>
+              </div>
             </div>
             <div className="animate-slide-up">
               <div className="w-64 h-80 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 p-1 overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow duration-300">
@@ -42,29 +61,6 @@ const Hero = () => {
           </div>
 
           <div className="text-center w-full">
-            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-up animation-delay-300">
-              Passionate about creating beautiful, user-friendly web applications with modern
-              technologies. Committed to delivering high-quality, scalable solutions.
-            </p>
-
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-slide-up animation-delay-400">
-            <button
-              onClick={handleScrollToContact}
-              className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              Get In Touch
-            </button>
-            <a
-              href="#projects"
-              onClick={(e) => {
-                e.preventDefault();
-                document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="px-8 py-3 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 font-semibold rounded-lg shadow-lg hover:shadow-xl border-2 border-blue-600 dark:border-blue-400 transform hover:scale-105 transition-all duration-300"
-            >
-              View Projects
-            </a>
-          </div>
 
             <div className="flex items-center justify-center gap-6 animate-slide-up animation-delay-500">
             <a
